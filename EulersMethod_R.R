@@ -1,0 +1,23 @@
+# Define the initial conditions
+x <- c(0)
+
+# Define time steps
+deltat <- 0.1
+times <- seq(from=0,to=5,by=deltat)
+steps <- length(times)
+
+# Perform Euler's method
+for (k in 2:steps){
+  # Calculate 'next estimate'
+  x_next = x[k-1] + 2*exp(2*times[k-1])*deltat
+  
+  # Store next estimate in x vector
+  x <- c(x,x_next)
+}
+
+# Plot the true solution and approximation
+x_true <- exp(2*seq(0, 5, 0.01))
+plot(seq(0, 5, 0.01), x_true, type='l', 
+     col='blue', lwd=3)
+lines(times, x, type='l', col='red', 
+      lwd=3, lty=2)

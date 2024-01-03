@@ -1,0 +1,211 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage{amsmath,amssymb}
+
+
+\begin{document}
+	
+	
+	\begin{align*}
+		\frac{dS}{dt} &= -\beta SI,\\[0.5em]
+		\frac{dI}{dt} &= \beta SI - \gamma I,\\[0.5em]
+		\frac{dR}{dt} &= \gamma I.
+	\end{align*}
+	
+	\begin{align*}
+	\frac{dS}{dt} + \frac{dI}{dt} + \frac{dR}{dt} = 0\\[0.5em]
+	S + I + R = 1
+	\end{align*}
+	
+	
+	\newpage
+	
+	
+	\begin{align*}
+	\frac{dS}{dt} &= -\beta SI + \gamma I\\[0.5em]
+	\frac{dI}{dt} &= \beta SI - \gamma I\\[0.5em]
+	\end{align*}
+	
+	\begin{align*}
+	\frac{dS}{dt} &+ \frac{dI}{dt} = 0\\[0.5em]
+	S &+ I = 1
+	\end{align*}
+
+		\newpage
+	
+	
+\begin{align*}
+\frac{dS}{dt} &= -\beta SI,\\[0.5em]
+\frac{dE}{dt} &= \beta SI - \sigma E,\\[0.5em]
+\frac{dI}{dt} &= \sigma E - \gamma I,\\[0.5em] 
+\frac{dR}{dt} &= \gamma I.
+\end{align*}
+
+	\begin{align*}
+\frac{dS}{dt} + \frac{dE}{dt} + \frac{dI}{dt} + \frac{dR}{dt} = 0\\[0.5em]
+S + E + I + R = 1
+\end{align*}
+	
+			\newpage
+	
+	
+	\begin{align*}
+	\frac{dS}{dt} &= -\beta SI - \epsilon\nu S,\\[0.5em]
+	\frac{dI}{dt} &= \beta (S+V)I - \gamma I,\\[0.5em] 
+	\frac{dR}{dt} &= \gamma I + \delta V,\\[0.5em]
+	\frac{dV}{dt} &=  \epsilon\nu S - (\beta I+\delta)V.
+	\end{align*}
+	
+	\begin{align*}
+		\frac{dS}{dt} + \frac{dI}{dt} + \frac{dR}{dt} + \frac{dV}{dt} = 0\\[0.5em]
+		S + I + R + V = 1
+	\end{align*}
+	
+	\newpage
+	
+	
+	\begin{equation*}
+		x_{k+1} = x_{k} + \frac{dx}{dt}\mid_{k} \Delta t, \quad\text{for steps $k=0,1,2,...$}.
+	\end{equation*}
+	
+	
+	\newpage
+	
+	
+		\begin{align*}
+	\frac{dS_1}{dt} &= -\frac{\beta S_1}{N_1}(I_1+I_2\rho_{12}),\\[0.5em]
+	\frac{dI_1}{dt} &= \frac{\beta S_1}{N_1}(I_1+I_2\rho_{12}) - \gamma I_1,\\[0.5em]
+	\frac{dR_1}{dt} &= \gamma I_1, \\[0.5em]
+	N_1 &= S_1 + I_1 + R_1,
+	\end{align*}
+	
+	\begin{align*}
+	\frac{dS_2}{dt} &= -\frac{\beta S_2}{N_2}(I_2+I_1\rho_{21}),\\[0.5em]
+	\frac{dI_2}{dt} &= \frac{\beta S_2}{N_2}(I_2+I_1\rho_{21}) - \gamma I_2,\\[0.5em]
+	\frac{dR_2}{dt} &= \gamma I_2, \\[0.5em]
+	N_2 &= S_2 + I_2 + R_2.
+	\end{align*}
+	
+	\begin{equation*}
+	\frac{dS}{dt} + \frac{dI}{dt} + \frac{dR}{dt} = 0.
+	\end{equation*}
+	
+	
+	\newpage
+	
+	
+	
+	\begin{align*}
+	\frac{dS_1}{dt} &= -\frac{\beta S_1I_1}{N_1} + m_{12}S_2 - m_{21}S_1,\\[0.5em]
+	\frac{dI_1}{dt} &= \frac{\beta S_1I_1}{N_1} - \gamma I_1  + m_{12}I_2 - m_{21}I_1,\\[0.5em]
+	\frac{dR_1}{dt} &= \gamma I_1  + m_{12}R_2 - m_{21}R_1, \\[0.5em]
+	N_1 &= S_1 + I_1 + R_1,
+	\end{align*}
+	
+	\begin{align*}
+	\frac{dS_2}{dt} &= -\frac{\beta S_2I_2}{N_2} - m_{12}S_2 + m_{21}S_1,\\[0.5em]
+	\frac{dI_2}{dt} &= \frac{\beta S_2I_2}{N_2} - \gamma I_2 - m_{12}I_2 + m_{21}I_1,\\[0.5em]
+	\frac{dR_2}{dt} &= \gamma I_2 - m_{12}R_2 + m_{21}R_1, \\[0.5em]
+	N_2 &= S_2 + I_2 + R_2.
+	\end{align*}	
+	
+	
+	
+	\newpage
+	
+	
+	\begin{align*} 
+	&I_{reported} = \mbox{Bin}(p_r,I_{true}) + \mbox{Bin}(p_m,N-I_{true}),\\[0.5em]
+	&p_r : \text{probability that a case is reported,}\\
+	&p_m : \text{probability that a healthy individual is mis-diagnosed.}
+	\end{align*}
+	
+	\newpage
+	
+	\begin{align*}
+	\frac{dS}{dt} &= -\frac{\beta(1+\epsilon) SI}{N},\\[0.5em]
+	\frac{dI}{dt} &= \frac{\beta(1+\epsilon) SI}{N} - \gamma(1+\xi) I,\\[0.5em]
+	\frac{dR}{dt} &= \gamma(1+\xi) I.
+	\end{align*}
+	
+	\begin{align*}
+	\epsilon \sim \mbox{N}(0,\sigma_{\epsilon}),\\
+	\xi \sim \mbox{N}(0,\sigma_{\xi}).
+	\end{align*}
+	
+	\newpage
+	
+	\begin{align*}
+	\frac{dS}{dt} &= -\frac{\beta SI}{N},\\[0.5em]
+	\frac{dI}{dt} &= \frac{\beta SI}{N} - \gamma I,\\[0.5em]
+	\frac{dR}{dt} &= \gamma I.
+	\end{align*}
+	
+	\begin{align*}
+	S + I + R = N
+	\end{align*}
+	
+	\newpage
+	
+	\begin{equation*}
+	\Longrightarrow\text{Substitute:} \begin{cases}
+	S \rightarrow \frac{S}{N}\\
+	I \rightarrow \frac{I}{N}\\
+	R \rightarrow \frac{R}{N}
+	\end{cases}
+	\Longrightarrow
+	\end{equation*}
+	
+	\newpage
+	
+	\begin{align*}
+	\frac{dS_i}{dt} &= -\sum_{j=1}^{n}\frac{\beta S_iI_j}{N_i}\rho_{ij}\\[0.5em]
+	\frac{dI_i}{dt} &= \sum_{j=1}^{n}\frac{\beta S_iI_j}{N_i}\rho_{ij} - \gamma I_i\\[0.5em]
+	\frac{dR_i}{dt} &= \gamma I_i \\[0.5em]
+	\end{align*}
+	
+	where
+	\begin{align*}
+	i,j &= \{1,2,...,n\}\\
+	\rho_{ii} &= 1 \quad\text{(interaction within patch)}
+	\end{align*}
+	
+		\newpage
+	
+	\begin{align*}
+	\frac{dS_i}{dt} &= -\frac{\beta S_iI_i}{N_i} + \sum_{j=1}^{n}m_{ij}S_j - \sum_{j=1}^{n}m_{ji}S_i\\[0.5em]
+	\frac{dI_i}{dt} &= \frac{\beta S_iI_i}{N_i} - \gamma I_i + \sum_{j=1}^{n}m_{ij}I_j - \sum_{j=1}^{n}m_{ji}I_i\\[0.5em]
+	\frac{dR_i}{dt} &= \gamma I_i + \sum_{j=1}^{n}m_{ij}R_j - \sum_{j=1}^{n}m_{ji}R_i \\[0.5em]
+	\end{align*}
+	
+	where
+	\begin{align*}
+	\text{where}\\
+	i,j &= \{1,2,...,n\}\\
+	m_{ii} &= 1 - \sum_{j\neq i} m_{ji}\\ &\text{(remain in patch)}
+	\end{align*}
+	
+	\newpage
+	
+	\begin{align*}
+	\beta^* &= \beta(1+\epsilon)\\[0.5em]
+	\gamma^* &= \gamma(1+\xi)	
+	\end{align*}
+	
+	\newpage
+	
+	\begin{enumerate}
+		\item $E_1$: transmission, $E_2$: recovery.
+		\item $R_1 = \frac{\beta SI}{N}$, $R_2 = \gamma I$.
+		\item $R_{total} = R_1 + R_2$.
+		\item $\delta t = \frac{-1}{R_{total}}log(RAND_1)$.
+		\item $P = RAND_2 \cdot R_{total}$.
+		\item If $P < R_1$, \\
+		then transmission occurs: $S \rightarrow S-1$, $I \rightarrow I+1$, \\
+		otherwise,\\
+		recovery occurs: $I \rightarrow I-1$, $R\rightarrow R+1$.
+		\item $t \rightarrow t+\delta t$.
+		\item Return to step 2.
+	\end{enumerate}
+	
+\end{document}
